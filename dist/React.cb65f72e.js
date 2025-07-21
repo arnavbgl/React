@@ -160,11 +160,11 @@
       });
     }
   }
-})({"bRj5D":[function(require,module,exports,__globalThis) {
+})({"icAAj":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 50299;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -677,24 +677,18 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactDom = require("react-dom");
-var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
-const parent = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
-    id: "parent"
-}, /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
-    id: "child"
-}, /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
-    id: "heading"
-}, "heading1")));
-const root = (0, _reactDomDefault.default).createRoot(document.getElementById("root"));
-root.render(parent);
+var _client = require("react-dom/client");
+var _clientDefault = parcelHelpers.interopDefault(_client);
+const hello = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {}, "hello i am new here");
+const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
+root.render(hello);
 
   $parcel$ReactRefreshHelpers$4931.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"jMk1U","react-dom":"i4X7T","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"jMk1U":[function(require,module,exports,__globalThis) {
+},{"react":"jMk1U","react-dom/client":"hrvwu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"jMk1U":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("a569817e6ea559f6");
 
@@ -2565,7 +2559,28 @@ module.exports = require("a569817e6ea559f6");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === 'function') __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"i4X7T":[function(require,module,exports,__globalThis) {
+},{}],"hrvwu":[function(require,module,exports,__globalThis) {
+'use strict';
+var m = require("aaccff5d309d9239");
+var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+exports.createRoot = function(c, o) {
+    i.usingClientEntryPoint = true;
+    try {
+        return m.createRoot(c, o);
+    } finally{
+        i.usingClientEntryPoint = false;
+    }
+};
+exports.hydrateRoot = function(c, h, o) {
+    i.usingClientEntryPoint = true;
+    try {
+        return m.hydrateRoot(c, h, o);
+    } finally{
+        i.usingClientEntryPoint = false;
+    }
+};
+
+},{"aaccff5d309d9239":"i4X7T"}],"i4X7T":[function(require,module,exports,__globalThis) {
 'use strict';
 function checkDCE() {
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined' || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== 'function') return;
@@ -26376,6 +26391,6 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["bRj5D","blcJa"], "blcJa", "parcelRequire77dd", {}, null, null, "http://localhost:50299")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["icAAj","blcJa"], "blcJa", "parcelRequire77dd", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=React.cb65f72e.js.map
