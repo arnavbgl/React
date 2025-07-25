@@ -7,8 +7,22 @@ const jsxheading = (<h1>
     </h1>);
 
 // components
+// functional components 
 
+const FuncComp = () =>(
+    <div>
+        <h1>
+            hello from the functional component
+        </h1>
+    </div>
+);
 
+const Subfunction = () => (
+    <div>
+    <FuncComp />
+    <h2>hello from second func</h2>
+    </div>
+);
 const root =ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxheading);
+root.render(<Subfunction />);

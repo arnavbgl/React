@@ -689,8 +689,51 @@ const jsxheading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     columnNumber: 21
 }, undefined);
 // components
+// functional components 
+const FuncComp = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "hello from the functional component"
+        }, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 14,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 13,
+        columnNumber: 5
+    }, undefined);
+_c = FuncComp;
+const Subfunction = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(FuncComp, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 22,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "hello from second func"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 23,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 21,
+        columnNumber: 5
+    }, undefined);
+_c1 = Subfunction;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(jsxheading);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Subfunction, {}, void 0, false, {
+    fileName: "App.js",
+    lineNumber: 28,
+    columnNumber: 13
+}, undefined));
+var _c, _c1;
+$RefreshReg$(_c, "FuncComp");
+$RefreshReg$(_c1, "Subfunction");
 
   $parcel$ReactRefreshHelpers$4931.postlude(module);
 } finally {
